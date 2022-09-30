@@ -1,0 +1,257 @@
+@font-face {
+    font-family: merriweather;
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: sacramento;
+    src: url(../fonts/Sacramento-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    color: #545454;
+    background-color: #fff;
+    margin: 0;
+    line-height: 1.43;
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    color: #45b29a;
+    text-decoration: none;
+}
+a:hover {
+    color: #21564b;
+}
+
+a.active {
+    color: #21564b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #45b29a;
+    font-family: merriweather;
+}
+
+p {
+    line-height: 2;
+}
+
+.sec-seperator {
+    border: none;
+    border-top: 7px dotted rgba(118, 183, 187, 0.639);
+    width: 70px;
+    margin: 130px auto;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.container {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    max-width: 750px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+article header h1 {
+    color: #1e836c;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/******************************* Top Section *******************************/
+#top {
+    overflow: hidden;
+    background-color: #e0ebe8;
+    
+}
+
+.nav-top {
+    background: inherit;
+    position: relative;
+    z-index: 1000;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: auto;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.header-left a {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.logo-image {
+    display: block;
+    background-image: url(../images/avatar.svg);
+    background-size: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    z-index: 1000;
+}
+
+.behind {
+    background-color: #f6f9f8;
+    position: absolute;
+    height: 72px;
+    width: 72px;
+    z-index: 800;
+    display: block;
+}
+
+.header-container {
+    position: relative;
+    padding: 0;
+    padding-top: 40px;
+    max-width: 960px;
+}
+
+.h-title {
+    font-family: sacramento;
+    font-size: 4.375em;
+    margin-bottom: 0;
+    padding-top: 40px;
+}
+.h-sub {
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.cloud-1 {
+    position: absolute;
+    right: 80px;
+}
+
+.cloud-2 {
+    position: absolute;
+    left: 80px;
+}
+
+.mountain {
+    margin-bottom: -7px;
+    width: 100%;
+}
+
+/******************************* hello Section *******************************/
+.hello-sec {
+    margin-top: 50px;
+    max-width: 535px;
+}
+
+.hello-sec img {
+    width: 7em;
+}
+
+
+/******************************* what-i-can Section *******************************/
+#what-i-can #design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#what-i-can #develop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    text-align: right;
+    gap: 40px;
+    padding: 10px;
+}
+
+#what-i-can img {
+    width: 7em;
+}
+
+
+/******************************* get-in-touch Section *******************************/
+#get-in-touch .container {
+    max-width: 670px;
+    padding-bottom: 90px;
+}
+
+#get-in-touch p {
+    line-height: 1.5;
+}
+
+.btn-message {
+    display: block;
+    padding: .75em 3.5em;
+    background: #45b29a;
+    color: #0a624f;
+    position: relative;
+    margin: 1.5em 0 0;
+    border-radius: 3px;
+    font-weight: 400;
+    font-family: merriweather;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border: 2px solid #45b29a;
+}
+
+.btn-message:hover {
+    border-color: #0ea587;
+}
+
+/******************************* Bottom Section *******************************/
+#bottom {
+    background-color: #66BFBF;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#bottom a {
+    color: #11999E;
+    font-weight: bold;
+    font-family: merriweather;
+}
+
+#bottom div:first-child {
+    display: flex;
+    gap: 3.5em;
+    justify-content: center;
+}
+
+#bottom div:last-child {
+    color: #EAF6F6;
+    font-family: merriweather;
+}
+
+
+/******************************* Responsive *******************************/
+@media (min-width: 992px) {
+    .btn-message {
+        display: inline-block;
+    }
+}
