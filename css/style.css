@@ -14,7 +14,7 @@
 
 body {
     font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-    color: #545454;
+    color: #ddd;
     background-color: #fff;
     margin: 0;
     line-height: 1.43;
@@ -45,7 +45,7 @@ p {
 
 .sec-seperator {
     border: none;
-    border-top: 7px dotted rgba(118, 183, 187, 0.639);
+    border-top: 7px dotted #F00380;
     width: 70px;
     margin: 130px auto;
 }
@@ -63,12 +63,23 @@ p {
 }
 
 article header h1 {
-    color: #1e836c;
+    color: #F00380;
     font-size: 2em;
     font-weight: 400;
 }
 
+
 /******************************* Top Section *******************************/
+.content{
+    background: #2D3134;
+    margin-top:-53px ;
+}
+#hello{
+    position: relative;
+    top: 40px;
+    color: white;
+    z-index: 10;
+}
 #top {
     overflow: hidden;
     background-color: #e0ebe8;
@@ -207,7 +218,7 @@ article header h1 {
     display: block;
     padding: .75em 3.5em;
     background: #45b29a;
-    color: #0a624f;
+    color: #2D3134;
     position: relative;
     margin: 1.5em 0 0;
     border-radius: 3px;
@@ -224,7 +235,7 @@ article header h1 {
 
 /******************************* Bottom Section *******************************/
 #bottom {
-    background-color: #66BFBF;
+    background-color: #282D30;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
